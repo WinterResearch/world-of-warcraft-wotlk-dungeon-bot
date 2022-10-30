@@ -20,6 +20,6 @@ required settings:
   interface / Controls:
     interact on left click
   
-    ![image](https://user-images.githubusercontent.com/95959417/198861122-0e000cb5-4553-4466-98c8-bdd01f550a0d.png)
-    ![image](https://user-images.githubusercontent.com/95959417/198861184-c18ddd87-f51f-48c3-9f7b-d2c3512f389a.png)
+![image](https://user-images.githubusercontent.com/95959417/198861122-0e000cb5-4553-4466-98c8-bdd01f550a0d.png)
+![image](https://user-images.githubusercontent.com/95959417/198861184-c18ddd87-f51f-48c3-9f7b-d2c3512f389a.png)
 
