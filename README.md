@@ -12,6 +12,8 @@ yes the code is sloppy, but its a proof of concept for botting dungeons with a s
 
 put script in same folder as the images. likely may need to retake these images as they are sensitive to specific monitors.
 reference python file, find/replace all png pictures that are being used within script. (windows+shift+s to take screenshot, save over same picture).
+reference the weakauras as those are a majority of the pictures that are being scanned for.
+
 if you see within the python file, each png has an associated region where the image can be found on the screen. this is very monitor specific, you will need to
 either remove this region parameter, or reference pyautogui docs to find how to source this region parameter for each image. I recommend going through the effort 
 of doing so, as it will increase the speed of each function.
