@@ -23,13 +23,13 @@ macro keybind = Alt5
   
 keybinds / targeting:
 
-interact With Target: CTRL-6
+interact with target: CTRL-6
 
-assist Target: F1
+assist target: F1
 
-attack Target: F2
+attack target: F2
 
-interface / Controls:
+interface / controls:
 
 interact on left click
   
