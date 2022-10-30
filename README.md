@@ -18,14 +18,19 @@ install weakauaras addon, one by one, import all of the weakauras strings from w
 required settings:
 
 /follow macro, modify this macro each dungeon, to dps that your character will be following
+
 macro keybind = Alt5
   
 keybinds / targeting:
 
 interact With Target: CTRL-6
+
 assist Target: F1
+
 attack Target: F2
+
 interface / Controls:
+
 interact on left click
   
 ![image](https://user-images.githubusercontent.com/95959417/198861122-0e000cb5-4553-4466-98c8-bdd01f550a0d.png)
