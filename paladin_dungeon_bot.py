@@ -11,6 +11,8 @@ mobs_killed = 0
 combat_status = False
 stop_bot = False
 aura = None
+
+
 def pause_bot():
 	print('PRESS F7 TO PAUSE THE BOT')
 	if keyboard.is_pressed('f7'):
@@ -21,7 +23,6 @@ def pause_bot():
 			sleep(5)
 		stop_bot = False
 		print('BOT BACK ON')
-
 
 
 def enemy_low():
@@ -99,12 +100,10 @@ def attack():
 	p.hotkey('shift','4')
 	p.press('r')
 	p.press('4')
-	#p.press('g')
 	p.press('t')
 	p.hotkey('shift','g')
-	
-	#art_of_war()
-	p.hotkey('ctrl','6') # run to target
+
+	p.hotkey('ctrl','6') # Interact with target keybind
 
 def target():
 	global targetz
@@ -132,9 +131,9 @@ def seal_not_on():
 		p.hotkey('shift','2')
 
 def find_image_location():
-	#pyautogui.press('capslock') #W/E NEED TO DO TO TRIGGER WA
-	b = p.locateOnScreen('dungeon_target.png',confidence=.9)
-	print(b)
+	'''use function to find image location, used for region parameters'''
+	image = p.locateOnScreen('dungeon_target.png',confidence=.9)
+	print(image)
 
 def follow_ally():
 	global combat_status
@@ -142,7 +141,7 @@ def follow_ally():
 	if combat_status is False:
 		print('COMBAT STATUS IS FALSE FOLLOWING')
 		p.hotkey('alt','5') # / follow macro keybind
-		sleep(5)
+		sleep(4)
 
 
 def turn(direction,direction2=None):
@@ -188,11 +187,6 @@ def art_of_war():
 	global low_health
 	global combat_status
 	aow = p.locateCenterOnScreen('art_of_war.png',confidence=.7,region=(2490,32,100,100),grayscale=True)
-	print(aow)
-	print(aow)
-	print(aow)
-	print(aow)
-
 	print('ART OF WAR BUFF')
 	print(combat_status)
 	print('COMBAT STATUS ABOVE')
@@ -215,16 +209,13 @@ def check_alive():
 
 
 def press_key(key,hold_time):
-
+	'''simulates holding down a key for hold_time in seconds'''
 		p.keyDown(key)
 		sleep(hold_time)
 		p.keyUp(key)
 
-
-
-
-
 def scan_keybind():
+	'''tab targeting enemy'''
 	p.press('tab')
 
 def scan_enemy():
@@ -257,7 +248,7 @@ def scan_enemy():
 			scan_keybind()
 		else:
 			p.hotkey('ctrl','6') # Interact with target wow keybind
-			p.press('f2') #Attack Target wow keybind
+			p.press('f2') # Attack Target wow keybind
 
 def got_xp():
 	#global mobs_killed
@@ -288,11 +279,9 @@ def loot_enemy():
 
 
 def clear_loot():
-	#if got_xp():
-		#print('GOT XP')
 	loot_enemy()
 	greed()
-		#p.hotkey('ctrl','y')
+
 
 def greed():
 	greed1 = p.locateCenterOnScreen('greed1.png',confidence=.7)
@@ -331,9 +320,6 @@ def dungeon_target():
 	
 
 while True:
-
-
-
 	start_time = perf_counter()
 
 
@@ -350,7 +336,6 @@ while True:
 	t1.start()
 	t2.start()
 	t3.start()
-	#t4.start()
 	t5.start()
 	t6.start()
 	t7.start()
@@ -359,11 +344,8 @@ while True:
 	t1.join()
 	t2.join()
 	t3.join()
-
 	t5.join()
-
 	t7.join()
-
 
 	end_time = perf_counter()
 
