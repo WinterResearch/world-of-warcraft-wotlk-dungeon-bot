@@ -1,8 +1,14 @@
 # world-of-warcraft-wotlk-dungeon-bot
 
+https://www.youtube.com/watch?v=qc3QvQZHkv4
+
+please consider staring the repositorty if you enjoy :)
+
 a world of warcraft pixel bot aimed at botting dungeons.
 
 this program was built specifically for paladin, though can be modified to work for other classes with relative ease.
+
+yes the code is sloppy, but its a proof of concept for botting dungeons with relative ease.
 
 put script in same folder as the images. likely may need to retake these images as they are sensitive to specific monitors.
 reference python file, find/replace all png pictures that are being used within script. (windows+shift+s to take screenshot, save over same picture).
