@@ -16,10 +16,12 @@ reference python file, find/replace all png pictures that are being used within 
 install weakauaras addon, one by one, import all of the weakauras strings from weakauras.txt file, each separated by spaces.
 
 required settings:
+
 /follow macro, modify this macro each dungeon, to dps that your character will be following
 macro keybind = Alt5
   
 keybinds / targeting:
+
 interact With Target: CTRL-6
 assist Target: F1
 attack Target: F2
