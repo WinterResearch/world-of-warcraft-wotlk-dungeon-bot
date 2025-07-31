@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=qc3QvQZHkv4
 
-please consider giving repositorty a star if you enjoy :)
+please consider giving repo a star if you enjoy
 
 a world of warcraft pixel bot aimed at botting dungeons.
 
